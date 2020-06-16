@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>About us</title>
+    {% block abouthref %}
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+    <link href="{% static 'blog/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+    {% endblock %}
+
+
+
+    {% block content %}
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+                <h1><a href="#">The Educator Blog</a></h1>
+                <p>Contact : <a href="#">marksoko79@gmail.com</a></p>
+            </div>
+
+            <div id="menu">
+                <ul>
+                    <li><a href="{% url 'blog-home' %}">Homepage</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="page">
+            <div id="content">
+                <h2>Pleasure to have you here</h2>
+                <p><img src="{% static 'images/about.jpg' %}" width="750" height="250" alt="" /></p>
+                <p>This is <strong>The Educator </strong>, where all our members have a word of inspiration and a story
+                    to share.
+                    Each registered member has a previdge to share and explore other members post for free. </p>
+                <p>Freedom of topic is also given to you.Did you get that?</p>
+            </div>
+            <div id="sidebar">
+                <div id="tbox1">
+                    <h2>Where to us from.</h2>
+                    <ul class="style2">
+                        <li class="first">
+                            <h3><a href="#">1.Create accout</a></h3>
+                            <p><a href="#">You have to be a member in order to publish a post.
+                                    If you only intend to view other peoples' post, you don't have to create one.</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h3><a href="#">2.To publish a post</a></h3>
+                            <p><a href="#">Click on the link on the nav "New post" and tou will be redirected to a page
+                                    where you can a publish a post.</a></p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="three-column">
+            <div id="tbox1">
+                <h2>Discuss with me</h2>
+                <p>Speaking your mind will be of much help to someone else.What do you have to say?</p>
+                <p>Can thinking too much be a problematic.What do you have to say?</p>
+            </div>
+            <div id="tbox2">
+                <h2>Educate me trend</h2>
+                <ul class="style1">
+                    <li class="first"><a href="#">Think.</a></li>
+                    <li><a href="#">Compose.</a></li>
+                    <li><a href="#">Share.</a></li>
+                </ul>
+                <p><a href="#" class="button-style">Read More</a></p>
+            </div>
+            <div id="tbox3">
+                <h2>Social</h2>
+                <ul class="style1">
+                    <li class="first"><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Flickr</a></li>
+                    <li><a href="#">Google +</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            <p>&copy; 2020 <a href="#">
+                </a>The Educator</p>
+        </div>
+    </div>
+
+    {% endblock %}
